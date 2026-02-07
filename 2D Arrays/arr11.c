@@ -10,20 +10,21 @@ int main() {
         }
     }
     for (int i = 0; i < r; i++) {
-        int prime = 1;
+        int ele = 1;
         for (int j = 0; j < c; j++) {
             for (int k = j + 1; k < c; k++) {
                 if (arr[i][j]>arr[i][k]) {
-                    prime = 0;
+                    ele = 0;
                     break;
                 }
             }
-            if (!prime)
+            if (!ele)
                 break;
         }
-        if (prime)
+        if (ele)
             count++;
     }
     printf("%d", count);
     return 0;
+
 }
