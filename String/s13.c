@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int main() {
     char str[100];
     char ch;
@@ -12,4 +13,5 @@ int main() {
     }
     printf("%d\n", index);
     return 0;
+
 }
